@@ -1,0 +1,532 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+#header {
+  height: 60px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: rgba(76, 113, 86, 0.7);
+  color: aliceblue;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+}
+.logo img {
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 10px;
+}
+.nav-name {
+  display: flex;
+  gap: 20px;
+}
+.nav-name a {
+  font-size: 18px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+.nav-name a:hover {
+  border-bottom: 3px solid rgb(176, 195, 207);
+  transition: .2s;
+}
+
+/* Home */
+#home {
+  min-height: 100vh;
+  width: 100%;
+  background: black;
+  padding: 65px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.homeleft {
+  flex: 1 1 300px;
+  padding: 20px;
+  padding-right: 50px;
+}
+.homeright {
+  flex: 1 1 250px;               
+  width: 100%;                   
+  max-width: 400px;              
+  aspect-ratio: 1 / 1;           
+  border-radius: 50%;            
+  background: url("/a2.jpg") center/cover no-repeat;
+  margin: 0px auto;
+  margin-left: 0px;
+  transition: 1.5s;
+  margin-right: 20px;
+}
+
+/* Hover effect */
+.homeright:hover {
+  box-shadow: 0 0 10px 8px white;
+  transform: scale(1.05);
+}
+
+/* 🔹 Mobile screens */
+@media (max-width: 768px) {
+  .homeright {
+    max-width: 250px;           
+  }
+}
+@media (max-width: 480px) {
+  .homeright {
+    max-width: 180px;           
+  }
+}
+.homeright:hover {
+  box-shadow: 0px 0px 10px 8px white;
+  transform: scale(1.1);
+}
+.medium { font-size: 22px; font-weight: bold; color: white; }
+.bold {
+  font-size: 38px;
+  font-weight: bold;
+  background: linear-gradient(to right, white, green);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: name 10s linear infinite;
+}
+@keyframes name { 
+  to { background-position: 400%;
+   } 
+}
+.small {
+  font-size: 28px;
+  font-weight: bold;
+  background: linear-gradient(to right, white, green);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: avneesh 8s linear infinite;
+}
+@keyframes avneesh { to { background-position: 400%; } }
+
+.lorem { font-size: 21px; color: white; margin-top: 10px; }
+
+.Hbtn {
+  display: inline-block;
+  font-size: 18px;
+  padding: 8px 20px;
+  background: #5e936c;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.Hbtn:hover { box-shadow: 0 0 10px 5px white; }
+
+/* About */
+#about {
+  border: none;
+  border-top: 1.5px solid rgb(202, 195, 195);
+  min-height: 100vh;
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutleft {
+  flex: 1 1 280px;               
+  width: 100%;                   
+  max-width: 400px;              
+  aspect-ratio: 1 / 1;           
+  border-radius: 50%;            
+  background: url("/a3.jpg") center/cover no-repeat;
+  margin: 20px auto;           
+  transition: 1.5s;
+  margin-left: 30px;
+}
+.para{
+  font-size: 21px;
+}
+/* Hover effect */
+.aboutleft:hover {
+  box-shadow: 0 0 10px 8px white;
+  transform: scale(1.05);
+}
+/* Tablet view */
+@media (max-width: 768px) {
+  .aboutleft {
+    max-width: 280px;           
+  }
+}
+/* Mobile view */
+@media (max-width: 480px) {
+  .aboutleft {
+    max-width: 180px;         
+  }
+}
+
+.aboutleft:hover { transform: scale(1.1); box-shadow: 0 0 10px 8px white; }
+
+.aboutright {
+  flex: 1 1 400px;
+  padding: 10px;
+  padding-left: 45px;
+  padding-right: 15px;
+}
+.icon a{
+  margin: 12px;
+  margin-left: 0px;
+  border-radius: 50px;
+}
+.icon a:hover{
+  box-shadow: 0 0 8px 10px #354f3c;
+  transition: 1.2s;
+}
+.nameaniamtion{
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+    background: linear-gradient(to right,white,green);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: nam 8s linear infinite;
+}
+@keyframes nam{
+   to{background-position: 400%;
+    } 
+}
+
+/* Skills */
+#skill {
+  border: none;
+  border-top: 1.5px solid rgb(202, 195, 195);
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+#heading h1 { font-size: 40px; }
+.skillsection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.boxes, .setimg {
+  width: 140px;
+  height: 140px;
+  border-radius: 20px;
+  background-size: cover;
+}
+.boxes:hover, .setimg:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 5px #5e936c;
+  transition: 1.5s;
+}
+
+.topskill, .lowerskill {
+    width: 100%;                
+    max-width: 1200px;          
+    height: auto;               
+    margin: 20px auto;          
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;            
+    padding: 20px;              
+    box-sizing: border-box;     
+}
+
+/* Specific spacing */
+.topskill {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.lowerskill {
+    margin-top: -30px;  
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .topskill, .lowerskill {
+        justify-content: center;   
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .topskill, .lowerskill {
+        flex-direction: column;    
+        height: auto;
+        margin-top: 10px;
+    }
+}
+
+/* Projects */
+#project {
+  border: none;
+  border-top: 1.5px solid rgb(202, 195, 195);
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 60px 20px;
+}
+#head h1 { font-size: 40px; text-align: center; }
+.projectsection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.imgbox, .setimgs {
+  width: 220px;
+  height: 140px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.imgbox:hover, .setimgs:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 5px #5e936c;
+  transition: 1.5s;
+}
+
+.imgbox {
+  position: relative; 
+  display: inline-block;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Hidden text initially */
+.imgbox::after {
+  /* content: "This is the statement on hover bvg  g g jd d nd  hd dc sg bgm  sc gm  d  uh  d x v !"; */
+  position: absolute;
+  bottom: 0px; 
+  left: 0%;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 11px;
+  /* white-space:; */
+  opacity: 0; 
+  pointer-events: none;
+  transition: opacity 0.3s ease;  
+}
+/* Show on hover */
+.imgbox:hover::after {
+  opacity: 1;
+  transition: 2s;
+}
+/* Quirex code */
+.quirex::after{
+  content: "Real Estate Portal – An online system for managing property details,customer inquiries, and real-time availability.";
+  color: black;
+  font-weight: bold;
+  background-color: #84af8f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Calculator code */
+.calculator::after{
+  content: "Calculator Project – A digital tool to solve mathematical calculations quickly and accurately";
+  color: black;
+  font-weight: bold;
+  background-color: #84af8f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* News portal calculator*/
+.news::after{
+  content: "News Portal – A digital platform for delivering the latest news, articles, and updates in real time. ";
+  color: black;
+  font-weight: bold;
+  background-color: #84af8f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Social media  calculator*/
+.socialmedia::after{
+  content: "Social Media Website – A project designed to enable communication, content sharing, and networking in a user-friendly environment";
+  color: black;
+  font-weight: bold;
+  background-color: #84af8f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* music player calculator*/
+.musicplayer::after{
+  content: "Music Player – A digital application designed to play, manage, and organize audio files with an easy-to-use interface.";
+  color: black;
+  font-weight: bold;
+  background-color: #84af8f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* digitalclock calculator*/
+.digitalclock::after{
+  content: "Digital Clock – A real-time application that displays the current time with an interactive and user-friendly interface.”";
+  color: black;
+  font-weight: bold;
+  background-color: #84af8f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* amazon calculator*/
+.amazonclone::after{
+  content: "Amazon Clone – An e-commerce web application designed to replicate the core features of Amazon, providing product browsing, shopping cart, and checkout functionalities.”";
+  color: black;
+  font-weight: bold;
+  background-color: #84af8f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Food calculator*/
+.food::after{
+  content: "Landing page of the Spicy food clone. ";
+  color: black;
+  font-weight: bold;
+  background-color: #84af8f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topproject, .lowerproject {
+    width: 100%;                
+    max-width: 1200px;          
+    height: auto;               
+    margin: 20px auto;          
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;            
+    padding: 15px;
+    box-sizing: border-box;     
+}
+/* Responsive */
+@media (max-width: 1024px) {
+    .topproject, .lowerproject {
+        justify-content: center;  
+        gap: 20px;                
+    }
+}
+
+@media (max-width: 768px) {
+    .topproject, .lowerproject {
+        flex-direction: column;   
+        height: auto;
+        margin: 15px auto;
+    }
+}
+
+/* Contact */
+#contact {
+  border: none;
+  border-top: 1.5px solid rgb(202, 195, 195);
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 60px 20px;
+}
+.Box {
+  max-width: 700px;
+  margin: auto;
+}
+.upper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.upper input {
+  flex: 1;
+  margin-top: 10px;
+  min-width: 45%;
+  padding: 10px;
+  border-radius: 10px;
+  background: black;
+  border: .5px solid white;
+  border-bottom: 1.2px solid white;
+  color: white;
+}
+.upper input:hover{
+  /* transform: scale(1.1); */
+  box-shadow: 0 0 2px 2px white;
+  transition: 0.7s;
+}
+
+.lower textarea {
+  width: 100%;
+  min-height: 180px;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1.2px solid white;
+  color: white;
+  background: black;
+}
+
+.lower textarea:hover{
+  /* transform: scale(1.1); */
+  box-shadow: 0 0 2px 2px white;
+  transition: 0.7s;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #5e936c;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.btn:hover { box-shadow: 0 0 5px 2px #86ce99; transition: 1s; }
+
+/* Footer */
+#footer {
+  border: none;
+  border-top: 1.5px solid rgb(202, 195, 195);
+  width: 100%;
+  background: rgb(24, 24, 49);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/*Media Queries */
+@media (max-width: 992px) {
+  .nav-name { gap: 15px; }
+  .aboutleft { height: 300px; max-width: 300px; }
+  .homeright { height: 300px; max-width: 300px; }
+}
+
+@media (max-width: 768px) {
+  #header { flex-direction: column; height: auto; padding: 10px; }
+  .nav-name { flex-wrap: wrap; justify-content: center; }
+  #home, #about { flex-direction: column; text-align: center; }
+  .homeleft, .aboutright { text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .nav-name a { font-size: 16px; padding: 6px 10px; }
+  .boxes, .setimg { width: 100px; height: 100px; }
+  .imgbox, .setimgs { width: 100%; max-width: 260px; }
+}
