@@ -13,10 +13,11 @@ const Skill = () => {
             <div className="boxes"><img src="/react.svg" alt="Null" className="setimg"/></div>
           </div>
           <div className="lowerskill">
-            <div className="boxes"><img src="/nodejs.png" alt="Null" className="setimg"/></div>
+            <div className="boxes"><img src="/nodeExpress.png" alt="Null" className="setimg"/></div>
+            <div className="boxes"><img src="/mongoDB.png" alt="Null" className="setimg"/></div>
             <div className="boxes"><img src="/C.jpg" alt="Null" className="setimg"/></div>
             <div className="boxes"><img src="/java.png" alt="Null" className="setimg"/></div>
-            <div className="boxes"><img src="/sql.jpeg" alt="Null" className="setimg img-fluid"/></div>
+            {/* <div className="boxes"><img src="/sql.jpeg" alt="Null" className="setimg img-fluid"/></div> */}
           </div>
         </div>
     </div>

@@ -9,9 +9,9 @@ const Home = () => {
           <span  className="medium">And I'm</span><br/>
           <span className="small">Frontend Developer</span><br/>
           <span className="lorem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            I'm a passionate Web Developer dedicated to building clean, responsive, and interactive user interfaces using modern web technologies like HTML, CSS, JavaScript, Bootstrap and with experience framework like React.js and Node.js. My portfolio includes a responsive website I develop for a local business, where I focused on enhancing user experience and accessibility.
+            I am a passionate Web Developer focused on creating clean, responsive, and interactive user interfaces using modern web technologies such as HTML, CSS, JavaScript, and Bootstrap. I also have hands-on experience working with frameworks like React.js, Node.js, and Express.js, along with API integration.<br/>My portfolio includes a responsive website I develop for a local business, where I focused on enhancing user experience and accessibility. give this content me professsional summary written in my portfolio website
           </span>
-          <br/><a className='Hbtn' href="/avneeshresume.pdf" target="new"><b>Resume</b></a> 
+          <br/><a className='Hbtn' href="/resumeavneesh.pdf" target="new"><b>Resume</b></a> 
         </div>
         <div className='homeright'></div>
     </div>

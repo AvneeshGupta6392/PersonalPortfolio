@@ -386,8 +386,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 /* digitalclock calculator*/
-.digitalclock::after{
-  content: "Digital Clock – A real-time application that displays the current time with an interactive and user-friendly interface.”";
+.evassit::after{
+  content: "EV GenAI Assistance is an AI-based web app that provides quick EV-related support and information using the Gemini API for accurate, real-time responses. ”";
   color: black;
   font-weight: bold;
   background-color: #84af8f;
